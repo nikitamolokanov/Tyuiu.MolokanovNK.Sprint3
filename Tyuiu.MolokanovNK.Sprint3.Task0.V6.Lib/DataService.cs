@@ -10,7 +10,7 @@ namespace Tyuiu.MolokanovNK.Sprint3.Task0.V6.Lib
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                MultiplySeries = MultiplySeries + (((1 / Math.Cos(5) + 1)));
+                MultiplySeries = MultiplySeries + (((1 / Math.Pow(Math.Cos(5) + 1, 2))));
             }
             return Math.Round(MultiplySeries, 3);
         }
