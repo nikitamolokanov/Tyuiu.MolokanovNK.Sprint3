@@ -12,7 +12,7 @@ namespace Tyuiu.MolokanovNK.Sprint3.Task2.V2.Lib
             {
                 MultiplySeries = MultiplySeries * (Math.Sin(0.1) + startValue);
                 startValue++;
-            } while ( startValue > stopValue );
+            } while ( startValue <= stopValue );
             return Math.Round(MultiplySeries, 3);
         }   
     }
