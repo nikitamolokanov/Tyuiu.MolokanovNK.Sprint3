@@ -6,17 +6,17 @@ namespace Tyuiu.MolokanovNK.Sprint3.Task4.V24.Lib
     {
         public double Calculate(int startValue, int stopValue)
         {
-            double res = 0; 
+            double res = 1; 
+
             for (int x = startValue; x <= stopValue; x++)
             {
                 if (x == 0)
                 {
-                    break;
+                    break; 
                 }
-                else
-                {
-                    res = res * (Math.Sin(x) / x) + 2;
-                }
+
+                double y = (Math.Sin(x) / x) + 2;
+                res = res * y; 
             }
             return Math.Round(res, 3);
         }
