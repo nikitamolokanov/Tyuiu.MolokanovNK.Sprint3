@@ -12,7 +12,7 @@ namespace Tyuiu.MolokanovNK.Sprint3.Task5.V19.Lib
             {
                 for(j = startValue2;j <= stopValue2; j++)
                 {
-                    sumSeries = sumSeries + Math.Pow(x/ Math.Cos(x),j);
+                    sumSeries = sumSeries + Math.Pow(1/ Math.Cos(x),j);
                 }
             }
             return Math.Round(sumSeries, 3);
