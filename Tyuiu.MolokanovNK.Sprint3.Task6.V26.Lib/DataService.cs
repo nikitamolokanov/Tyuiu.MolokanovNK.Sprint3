@@ -14,7 +14,7 @@ namespace Tyuiu.MolokanovNK.Sprint3.Task6.V26.Lib
                 {
                     if (x % d == 0)
                     {
-                        sum += d;
+                        sum++;
                     }
                 }
             }
