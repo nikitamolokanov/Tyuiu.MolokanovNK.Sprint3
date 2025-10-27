@@ -6,13 +6,13 @@ namespace Tyuiu.MolokanovNK.Sprint3.Task5.V19.Lib
     {
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
-            double sumSeries = 1;
-            int i,j;
+            double sumSeries = 2;
+            int i,k;
             for(i = startValue1;i <= stopValue1; i++)
             {
-                for(j = startValue2;j <= stopValue2; j++)
+                for(k = startValue2;k <= stopValue2; k++)
                 {
-                    sumSeries = sumSeries + Math.Pow(1/ Math.Cos(x),j);
+                    sumSeries = sumSeries + Math.Pow(x/ Math.Cos(x),k);
                 }
             }
             return Math.Round(sumSeries, 3);
